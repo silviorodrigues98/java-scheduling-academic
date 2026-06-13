@@ -1,83 +1,79 @@
-# Projeto de Sistema de Agendamentos para Academia Comunitária
+<!--
+  TEMPLATE: Academic Work
+  Use para: trabalhos de graduação (ESTACIO), atividades extensionistas
+-->
 
-## Sumário
-- [Projeto de Sistema de Agendamentos para Academia Comunitária](#projeto-de-sistema-de-agendamentos-para-academia-comunitária)
-  - [Sumário](#sumário)
-  - [Introdução](#introdução)
-  - [Requisitos](#requisitos)
-  - [Instalação](#instalação)
-  - [Uso](#uso)
-    - [Login](#login)
-    - [Cadastrar Horário](#cadastrar-horário)
-    - [Ver Meus Horários](#ver-meus-horários)
-  - [Estrutura do Código](#estrutura-do-código)
-  - [Contribuição](#contribuição)
-  - [Licença](#licença)
+# Sistema de Agendamentos para Academia Comunitária
 
-## Introdução
-Este projeto consiste em um sistema de agendamentos para uma academia comunitária. O sistema permite que os usuários se cadastrem e façam login, selecionem datas e horários para agendamento, e visualizem seus agendamentos.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
+![Swing](https://img.shields.io/badge/Swing-GUI-007396?style=flat)
+![Maven](https://img.shields.io/badge/Maven-3.x-C71A36?style=flat&logo=apachemaven&logoColor=white)
+![Estácio](https://img.shields.io/badge/Estácio-4º%20Semestre-0047AB?style=flat)
+![ADS](https://img.shields.io/badge/ADS-POO-2E8B57?style=flat)
 
-## Requisitos
-- Java JDK 8 ou superior
-- Um ambiente de desenvolvimento Java, como Eclipse ou IntelliJ IDEA
+> Sistema de agendamentos para academia comunitária com interface gráfica em Java Swing. Atividade avaliativa da disciplina de Programação Orientada a Objetos — 4º semestre de Análise e Desenvolvimento de Sistemas na Universidade Estácio de Sá.
 
-## Instalação
-1. **Clone o repositório:**
-   ```sh
-   git clone https://github.com/silviorodrigues98/java_graduacao_ESTACIO
-   ```
+---
 
-2. **Compile o projeto:**
-   Abra o projeto no seu ambiente de desenvolvimento Java e compile o código.
+## 🎯 Contexto Acadêmico
 
-3. **Execute o projeto:**
-   Execute a classe `App` para iniciar a aplicação.
+| Item | Detalhe |
+|------|---------|
+| **Instituição** | Universidade Estácio de Sá |
+| **Curso** | Análise e Desenvolvimento de Sistemas |
+| **Disciplina** | Programação Orientada a Objetos (POO) |
+| **Semestre** | 4º semestre |
+| **Ano** | 2024 |
 
-## Uso
+---
 
-### Login
-1. **Abrir a aplicação:**
-   Ao iniciar a aplicação, uma tela de login será exibida.
+## 📋 Objetivo
 
-2. **Inserir as credenciais:**
-   - **Usuário:** `admin`
-   - **Senha:** `admin`
+Desenvolver um sistema desktop em Java que permita o gerenciamento de agendamentos para uma academia comunitária. O sistema deve oferecer autenticação de usuários, cadastro de horários para agendamento e visualização dos agendamentos realizados, aplicando os conceitos de Programação Orientada a Objetos, interfaces gráficas com Swing e persistência de dados em arquivo.
 
-3. **Clicar no botão "Login":**
-   - Se as credenciais estiverem corretas, você será redirecionado para a tela principal.
-   - Se as credenciais estiverem incorretas, uma mensagem de erro será exibida.
+---
 
-### Cadastrar Horário
-1. **Clique no botão "CADASTRAR HORÁRIO".**
-2. **Selecione a data desejada usando o seletor de datas.**
-3. **Clique em "Confirmar".**
-4. **Selecione um ou mais horários disponíveis clicando nos botões de horário.**
-   - Os botões clicados ficarão verdes e desabilitados para indicar a seleção.
-5. **Clique no botão "SALVAR".**
-   - Seus agendamentos serão salvos em um arquivo `agendamentos.txt`.
+## 🛠️ Tecnologias Utilizadas
 
-### Ver Meus Horários
-1. **Clique no botão "VER MEUS HORÁRIOS".**
-2. **Uma tela com todos os seus agendamentos salvos será exibida.**
+- **Java** — Linguagem principal, com suporte a JDK 8+
+- **Java Swing** — Interface gráfica desktop (GUI)
+- **Maven** — Gerenciamento de dependências e build
+- **Persistência em arquivo** — Armazenamento de agendamentos em `agendamentos.txt`
 
-## Estrutura do Código
-- **Classe `App`:**
-  - Contém o método `main` que inicializa a aplicação.
-  - Implementa a interface gráfica e a lógica de login.
-  - Gerencia o fluxo entre as telas de cadastro de horários e visualização de agendamentos.
+---
 
-- **Componentes principais:**
-  - **Tela de Login:** Interface para entrada de credenciais.
-  - **Tela Principal:** Menu com opções para cadastrar novos horários ou visualizar agendamentos.
-  - **Tela de Cadastro de Horários:** Permite ao usuário selecionar datas e horários para agendamento.
-  - **Tela de Visualização de Agendamentos:** Exibe os agendamentos salvos do usuário.
+## ⚙️ Como Executar
 
-## Contribuição
-1. **Fork o repositório**
-2. **Crie uma branch com a nova feature (`git checkout -b feature/nova-feature`)**
-3. **Commit suas mudanças (`git commit -am 'Adiciona nova feature'`)**
-4. **Push para a branch (`git push origin feature/nova-feature`)**
-5. **Crie um novo Pull Request**
+```bash
+# Clone o repositório
+git clone https://github.com/silviorodrigues98/java_graduacao_ESTACIO.git
+cd java_graduacao_ESTACIO
 
-## Licença
-Este projeto está licenciado sob a Licença MIT
+# Compile com Maven
+./mvnw compile
+
+# Execute
+./mvnw exec:java -Dexec.mainClass="App"
+```
+
+> **Alternativa:** Importe o projeto como um projeto Maven em sua IDE (Eclipse, IntelliJ IDEA) e execute a classe `App`.
+
+---
+
+## 📚 Conceitos Aplicados
+
+- **Programação Orientada a Objetos** — Classes, métodos, encapsulamento e organização do código
+- **Interface Gráfica com Swing** — Construção de janelas, botões, campos de texto e painéis interativos
+- **Persistência de Dados** — Leitura e escrita de agendamentos em arquivo texto (`agendamentos.txt`)
+- **Controle de Fluxo** — Navegação entre telas (Login → Tela Principal → Cadastro / Visualização)
+- **Autenticação Simples** — Validação de credenciais fixas para acesso ao sistema
+
+---
+
+<p align="center">
+  Projeto acadêmico desenvolvido para a disciplina de Programação Orientada a Objetos — 4º semestre de Análise e Desenvolvimento de Sistemas
+</p>
+
+<p align="center">
+  <a href="https://github.com/silviorodrigues98">@silviorodrigues98</a>
+</p>
