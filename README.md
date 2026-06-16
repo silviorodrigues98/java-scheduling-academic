@@ -1,4 +1,14 @@
 <!--
+
+<!--
+  📌 Projeto acadêmico — mantido como registro de formação
+  Não recebe manutenção ativa.
+-->
+
+> **📚 Projeto acadêmico** — Desenvolvido durante o curso de **Análise e Desenvolvimento de Sistemas** (Estácio).  
+> Este repositório é mantido como **registro de formação**. Não recebe manutenção ativa.  
+> Para projetos atuais, veja meus repositórios em destaque no [perfil](https://github.com/silviorodrigues98).
+
   TEMPLATE: Academic Work
   Use para: trabalhos de graduação (ESTACIO), atividades extensionistas
 -->
